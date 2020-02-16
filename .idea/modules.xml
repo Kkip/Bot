@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/discBot.iml" filepath="$PROJECT_DIR$/.idea/discBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discBot.iml" filepath="$PROJECT_DIR$/discBot.iml" />
     </modules>
   </component>
 </project>
