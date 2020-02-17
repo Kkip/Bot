@@ -1,2 +1,4 @@
-rootProject.name = 'test'
+rootProject.name = 'discBot'
 
+// experimental gradle features
+enableFeaturePreview 'IMPROVED_POM_SUPPORT'
