@@ -1,4 +1,2 @@
 # Bot
-a bot with InsidiousData
-
-stuff
+a !ping bot with InsidiousData
