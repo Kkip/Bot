@@ -20,6 +20,8 @@ public class main {
         // Print invite url
         System.out.println("Invite url: " + api.createBotInvite());
 
+        
+
     }
 }
 
