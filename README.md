@@ -1,5 +1,6 @@
 # discBot
-A bot created to explore OOP with java. 
+Personal bot used with friends for various reasons
+Uses java, javacord
 
 ### Functions
 No much so far...
