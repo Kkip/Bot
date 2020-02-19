@@ -4,8 +4,9 @@ A bot created to explore OOP with java.
 ### Functions
 No much so far...
 
-- example ping command
-- addNumber command
+- example ping
+- binary arithmetic
+- copy avatar
 
 ### Dev
 1. [InsidiousData](https://github.com/InsidiousData)

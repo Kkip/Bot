@@ -9,4 +9,4 @@ public class ping implements MessageCreateListener {
                 event.getChannel().sendMessage("Pong!");
                 }
             }
-    }
+}

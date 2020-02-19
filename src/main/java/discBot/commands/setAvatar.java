@@ -7,13 +7,6 @@ public class setAvatar implements MessageCreateListener{
         public void onMessageCreate(MessageCreateEvent event) {
         // !setAvatar
         if (event.getMessageContent().equalsIgnoreCase("!setAvatar")) {
-
-            // checks if bot owner
-            if (!event.getMessage().getAuthor().isBotOwner()) {
-                event.getChannel().sendMessage("nope");
-                return;
-            }
-
             event.getApi()
                     .updateAvatar(event.getMessage().getAuthor().getAvatar()) // avatar change
                     .thenRun(() -> event.getChannel().sendMessage("something changed")) // notify of change
