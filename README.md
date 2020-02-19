@@ -5,8 +5,9 @@ A bot created to explore OOP with java.
 No much so far...
 
 - example ping command
+- addNumber command
 
 ### Dev
-1. [InsidiousData](https://github.com/InsidiousData)\
+1. [InsidiousData](https://github.com/InsidiousData)
 2. [Kkip](https://github.com/Kkip)
 
