@@ -10,3 +10,5 @@ public class ping implements MessageCreateListener {
                 }
             }
 }
+
+// use this for testing stuff if necessary

@@ -5,10 +5,9 @@ import org.javacord.api.listener.message.MessageCreateListener;
 
 public class binArith implements MessageCreateListener {
     public void onMessageCreate(MessageCreateEvent event) {
-        /* boolean containsLF = true; see comments, commented out because i think this isnt needed since the try catch
-        should just end this; delete it confirmed*/
-        String input = event.getMessageContent();
+                String input = event.getMessageContent();
         String[] words = input.split("\\s+");
+        double output; // declares output variable
 
         // !compute2 command
         if (words[0].equalsIgnoreCase("!compute2")) {
@@ -19,12 +18,9 @@ public class binArith implements MessageCreateListener {
             }
             // error check
             catch (NumberFormatException e) {
-                // containsLF = false;
-                event.getChannel().sendMessage("Error: input does not contain integers.");
+                event.getChannel().sendMessage("use !compute2 help to see commands.");
             }
             // output
-            double output; // move this to a better spot
-            // if (containsLF && words[1].equalsIgnoreCase("add_2")) {
             if (words[1].equalsIgnoreCase("add")) {
                 output = Double.parseDouble(words[2]) + Double.parseDouble(words[3]);
                 event.getChannel().sendMessage(Double.toString(output));
@@ -38,7 +34,7 @@ public class binArith implements MessageCreateListener {
                 event.getChannel().sendMessage(Double.toString(output));
             }
             else if ((words[1].equalsIgnoreCase("divide2"))) {
-                output = Double.parseDouble(words[2]) ^ Double.parseDouble(words[3]);
+                output = Double.parseDouble(words[2]) / Double.parseDouble(words[3]);
                 event.getChannel().sendMessage(Double.toString(output));
             }
 

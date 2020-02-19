@@ -20,7 +20,7 @@ public class main {
 
             // opt
             api.setMessageCacheSize(10, 1800);
-            
+
             // commands
             api.addMessageCreateListener(new setAvatar());
             api.addMessageCreateListener(new ping());
