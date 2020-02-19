@@ -16,4 +16,5 @@ repositories {
 dependencies {
     implementation 'org.javacord:javacord:3.0.5';
     runtimeOnly 'org.apache.logging.log4j:log4j-core:2.11.0'
+    implementation 'org.jetbrains:annotations:15.0'
 }

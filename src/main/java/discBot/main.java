@@ -13,16 +13,9 @@ public class main {
             // blocking
             DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
 
-            // commands?
+            // commands
             api.addMessageCreateListener(new setAvatar());
             api.addMessageCreateListener(new ping());
-  
-            // Replies with "Pong!" if someone writes "!ping"
-            api.addMessageCreateListener(event -> {
-                if (event.getMessage().getContent().equalsIgnoreCase("!ping")) {
-                    event.getChannel().sendMessage("Pong!");
-                }
-            });
 
             // Print invite url
             System.out.println("Invite url: " + api.createBotInvite());
