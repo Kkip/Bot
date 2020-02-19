@@ -8,6 +8,5 @@ public class ping implements MessageCreateListener {
             if (event.getMessageContent().toLowerCase().equalsIgnoreCase("!ping")) {
                 event.getChannel().sendMessage("Pong!");
                 }
-            });
+            }
     }
-}
