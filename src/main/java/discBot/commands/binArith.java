@@ -5,13 +5,13 @@ import org.javacord.api.listener.message.MessageCreateListener;
 
 public class binArith implements MessageCreateListener {
     public void onMessageCreate(MessageCreateEvent event) {
-                String input = event.getMessageContent();
+        String input = event.getMessageContent();
         String[] words = input.split("\\s+");
         double output; // declares output variable
 
         // !compute2 command
         if (words[0].equalsIgnoreCase("!compute2")) {
-            // int check
+            // double check
             try {
                 Double.parseDouble(words[2]);
                 Double.parseDouble(words[3]);
@@ -29,11 +29,11 @@ public class binArith implements MessageCreateListener {
                 output = Double.parseDouble(words[2]) - Double.parseDouble(words[3]);
                 event.getChannel().sendMessage(Double.toString(output));
             }
-            else if ((words[1].equalsIgnoreCase("multiply2"))) {
+            else if (words[1].equalsIgnoreCase("multiply2")) {
                 output = Double.parseDouble(words[2]) * Double.parseDouble(words[3]);
                 event.getChannel().sendMessage(Double.toString(output));
             }
-            else if ((words[1].equalsIgnoreCase("divide2"))) {
+            else if (words[1].equalsIgnoreCase("divide2")) {
                 output = Double.parseDouble(words[2]) / Double.parseDouble(words[3]);
                 event.getChannel().sendMessage(Double.toString(output));
             }

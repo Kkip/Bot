@@ -449,3 +449,73 @@ java.lang.NumberFormatException: For input string: "pi"
 2020-02-19 11:20:05,195 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
 2020-02-19 11:20:46,144 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
 2020-02-19 11:20:46,372 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 17:56:56,739 <DEBUG> <main                               > <[]> <{}> <   org.javacord.core.DiscordApiBuilderDelegateImpl> Creating shard 1 of 1
+2020-02-19 17:56:57,782 <DEBUG> <acord - Central ExecutorService - 2> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Trying to send GET request to https://discordapp.com/api/v6/gateway
+2020-02-19 17:56:58,248 <DEBUG> <acord - Central ExecutorService - 2> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Sent GET request to https://discordapp.com/api/v6/gateway and received status code 200 with body {"url": "wss://gateway.discord.gg"}
+2020-02-19 17:56:58,275 <DEBUG> <acord - Central ExecutorService - 2> <[]> <{shard=0}> < org.javacord.core.util.ratelimit.RatelimitManager> Calculated an offset of -1248 to the Discord time.
+2020-02-19 17:56:58,607 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Received HELLO packet
+2020-02-19 17:56:58,614 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 17:56:58,615 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sending identify packet
+2020-02-19 17:56:58,668 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 17:56:58,754 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Received READY packet
+2020-02-19 17:56:58,960 <DEBUG> <acord - Central ExecutorService - 1> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Trying to send GET request to https://discordapp.com/api/v6/oauth2/applications/@me
+2020-02-19 17:56:59,073 <DEBUG> <acord - Central ExecutorService - 1> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Sent GET request to https://discordapp.com/api/v6/oauth2/applications/@me and received status code 200 with body {"id": "678112141156286494", "name": "discBot", "icon": null, "description": "I love memes", "summary": "I love memes", "hook": true, "bot_public": false, "bot_require_code_grant": false, "verify_key": "29219edcd714e07d23c0433e1fbe28f36413359f6fc053baafbc6c5f44b76874", "owner": {"id": "679465569409433610", "username": "team679465569409433610", "avatar": null, "discriminator": "0000", "flags": 1024}, "team": {"id": "679465569409433610", "icon": null, "name": "discBot Team", "owner_user_id": "114921534635638786", "members": [{"user": {"id": "170689486877884416", "username": "kkip", "avatar": "7f0949b4922300ab6642bcb2ad3c1130", "discriminator": "6492"}, "team_id": "679465569409433610", "membership_state": 2, "permissions": ["*"]}, {"user": {"id": "114921534635638786", "username": "LKelvin", "avatar": "a4c1c313103c3c87b0ae69b717d0ab99", "discriminator": "1702"}, "team_id": "679465569409433610", "membership_state": 2, "permissions": ["*"]}]}}
+2020-02-19 17:56:59,075 <DEBUG> <acord - Central ExecutorService - 1> <[]> <{shard=0}> < org.javacord.core.util.ratelimit.RatelimitManager> Calculated an offset of -1074 to the Discord time.
+2020-02-19 17:57:16,328 <DEBUG> <acord - Central ExecutorService - 1> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Trying to send POST request to https://discordapp.com/api/v6/channels/679113929884172291/messages with body {"content":"1111","tts":false,"mentions":[]}
+2020-02-19 17:57:16,667 <DEBUG> <acord - Central ExecutorService - 1> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Sent POST request to https://discordapp.com/api/v6/channels/679113929884172291/messages and received status code 200 with body {"id": "679823849831137499", "type": 0, "content": "1111", "channel_id": "679113929884172291", "author": {"id": "678112141156286494", "username": "discBot", "avatar": "63775b3dd994f22c26136761fddbc83f", "discriminator": "5413", "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2020-02-19T22:57:16.316000+00:00", "edited_timestamp": null, "flags": 0, "nonce": null}
+2020-02-19 17:57:39,865 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 17:57:39,934 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 17:58:16,524 <DEBUG> <acord - Central ExecutorService - 3> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Trying to send POST request to https://discordapp.com/api/v6/channels/679113929884172291/messages with body {"content":"h","tts":false,"mentions":[]}
+2020-02-19 17:58:16,652 <DEBUG> <acord - Central ExecutorService - 3> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Sent POST request to https://discordapp.com/api/v6/channels/679113929884172291/messages and received status code 200 with body {"id": "679824101485051919", "type": 0, "content": "h", "channel_id": "679113929884172291", "author": {"id": "678112141156286494", "username": "discBot", "avatar": "63775b3dd994f22c26136761fddbc83f", "discriminator": "5413", "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2020-02-19T22:58:16.315000+00:00", "edited_timestamp": null, "flags": 0, "nonce": null}
+2020-02-19 17:58:21,117 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 17:58:21,174 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 17:58:25,810 <ERROR> <acord - Central ExecutorService - 2> <[]> <{shard=0}> <  org.javacord.core.util.event.EventDispatcherBase> Unhandled exception in a listener thread for discBot Testing Server!
+java.lang.NumberFormatException: For input string: "a"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:652) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:770) ~[?:?]
+	at discBot.commands.baseConv.onMessageCreate(baseConv.java:48) ~[main/:?]
+	at org.javacord.core.util.event.EventDispatcher.lambda$dispatchMessageCreateEvent$95(EventDispatcher.java:3413) ~[javacord-core-3.0.5.jar:?]
+	at org.javacord.core.util.event.EventDispatcherBase.lambda$dispatchEvent$10(EventDispatcherBase.java:197) ~[javacord-core-3.0.5.jar:?]
+	at org.javacord.core.util.event.EventDispatcherBase.lambda$checkRunningListenersAndStartIfPossible$18(EventDispatcherBase.java:265) [javacord-core-3.0.5.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+2020-02-19 17:59:02,370 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 17:59:02,431 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 17:59:22,317 <DEBUG> <acord - Central ExecutorService - 3> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Trying to send POST request to https://discordapp.com/api/v6/channels/679113929884172291/messages with body {"content":"f","tts":false,"mentions":[]}
+2020-02-19 17:59:22,512 <DEBUG> <acord - Central ExecutorService - 3> <[]> <{shard=0}> <           org.javacord.core.util.rest.RestRequest> Sent POST request to https://discordapp.com/api/v6/channels/679113929884172291/messages and received status code 200 with body {"id": "679824377214402730", "type": 0, "content": "f", "channel_id": "679113929884172291", "author": {"id": "678112141156286494", "username": "discBot", "avatar": "63775b3dd994f22c26136761fddbc83f", "discriminator": "5413", "bot": true}, "attachments": [], "embeds": [], "mentions": [], "mention_roles": [], "pinned": false, "mention_everyone": false, "tts": false, "timestamp": "2020-02-19T22:59:22.054000+00:00", "edited_timestamp": null, "flags": 0, "nonce": null}
+2020-02-19 17:59:43,622 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 17:59:43,688 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:00:24,874 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:00:24,944 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:01:06,127 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:01:06,210 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:01:47,379 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:01:47,475 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:02:28,630 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:02:28,699 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:03:09,881 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:03:09,937 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:03:51,133 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:03:51,235 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:04:32,386 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:04:32,564 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:05:13,637 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:05:13,691 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:05:54,888 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:05:55,009 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:06:36,141 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:06:36,279 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:07:17,394 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:07:17,466 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:07:58,646 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:07:58,893 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:08:39,898 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:08:40,188 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:09:21,151 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:09:21,268 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received
+2020-02-19 18:10:02,403 <DEBUG> <Javacord - Central Scheduler - 1   > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Sent heartbeat (interval: 41250)
+2020-02-19 18:10:02,742 <DEBUG> <ReadingThread                      > <[]> <{shard=0}> <javacord.core.util.gateway.DiscordWebSocketAdapter> Heartbeat ACK received

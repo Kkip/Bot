@@ -6,6 +6,7 @@ import java.util.Scanner;
 import discBot.commands.setAvatar;
 import discBot.commands.ping;
 import discBot.commands.binArith;
+import discBot.commands.baseConv;
 
 
 public class main {
@@ -25,6 +26,7 @@ public class main {
             api.addMessageCreateListener(new setAvatar());
             api.addMessageCreateListener(new ping());
             api.addMessageCreateListener(new binArith());
+            api.addMessageCreateListener(new baseConv());
 
             // Print invite url
             System.out.println("Bot started!");
