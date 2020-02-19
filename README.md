@@ -1,5 +1,5 @@
 # discBot
-Personal bot used with friends for various reasons
+Personal bot used with friends for various reasons\
 Uses java, javacord
 
 ### Functions
