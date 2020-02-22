@@ -7,7 +7,7 @@ import discBot.commands.setAvatar;
 import discBot.commands.ping;
 import discBot.commands.binArith;
 import discBot.commands.baseConv;
-
+import discBot.commands.help;
 
 public class main {
         public static void main(String[] args) {
@@ -27,6 +27,7 @@ public class main {
             api.addMessageCreateListener(new ping());
             api.addMessageCreateListener(new binArith());
             api.addMessageCreateListener(new baseConv());
+            api.addMessageCreateListener(new help());
 
             // Print invite url
             System.out.println("Bot started!");

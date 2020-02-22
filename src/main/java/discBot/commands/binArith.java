@@ -18,7 +18,7 @@ public class binArith implements MessageCreateListener {
             }
             // error check
             catch (NumberFormatException e) {
-                event.getChannel().sendMessage("use !compute2 help to see commands.");
+                event.getChannel().sendMessage("use !help compute2 to see commands.");
             }
             // output
             if (words[1].equalsIgnoreCase("add")) {
@@ -35,7 +35,12 @@ public class binArith implements MessageCreateListener {
             }
             else if (words[1].equalsIgnoreCase("divide2")) {
                 output = Double.parseDouble(words[2]) / Double.parseDouble(words[3]);
-                event.getChannel().sendMessage(Double.toString(output));
+                if (Integer.parseInt(words[3]) != 0) {
+                    event.getChannel().sendMessage(Double.toString(output));
+                }
+                else {
+                    event.getChannel().sendMessage("You shouldn't divide by 0!");
+                }
             }
 
         }
