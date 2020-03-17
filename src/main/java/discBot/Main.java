@@ -9,12 +9,16 @@ import discBot.commands.Arithmetic;
 import discBot.commands.BaseConvert;
 import discBot.commands.Help;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         // Insert bot's token here
         System.out.println("Input bot token: ");
-        Scanner input = new Scanner(System.in);
-        String token = input.nextLine();
+        Scanner in = new Scanner(System.in);
+        try {}
+        finally {
+            in.close();
+        } 
+        String token = in.nextLine();
 
         // blocking
         DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
