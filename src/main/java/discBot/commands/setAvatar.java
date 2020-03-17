@@ -3,7 +3,7 @@ package discBot.commands;
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
 
-public class setAvatar implements MessageCreateListener{
+public class SetAvatar implements MessageCreateListener{
         public void onMessageCreate(MessageCreateEvent event) {
         // !setAvatar
         if (event.getMessageContent().equalsIgnoreCase("!setAvatar")) {

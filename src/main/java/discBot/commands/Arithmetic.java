@@ -3,7 +3,7 @@ package discBot.commands;
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
 
-public class binArith implements MessageCreateListener {
+public class Arithmetic implements MessageCreateListener {
     public void onMessageCreate(MessageCreateEvent event) {
         String input = event.getMessageContent();
         String[] words = input.split("\\s+");
@@ -42,7 +42,6 @@ public class binArith implements MessageCreateListener {
                     event.getChannel().sendMessage("You shouldn't divide by 0!");
                 }
             }
-
         }
     }
 }

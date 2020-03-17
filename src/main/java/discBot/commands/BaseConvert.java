@@ -3,7 +3,7 @@
     import org.javacord.api.event.message.MessageCreateEvent;
     import org.javacord.api.listener.message.MessageCreateListener;
 
-    public class baseConv implements MessageCreateListener {
+    public class BaseConvert implements MessageCreateListener {
         // final base
         public static int baseTo10(char input) {
             if (input >= '0' && input <= '9') {
@@ -37,8 +37,8 @@
             String ans = "";
             int mod;
             while (input > 0) {
-                mod = input % base; // 1
-                input /= base; // 1
+                mod = input % base;
+                input /= base;
                 ans = invBaseTo10(mod) + ans; // concatenation
             }
             return (ans);
@@ -57,7 +57,6 @@
 
                     String output = toBase(dec, baseOut);
                     event.getChannel().sendMessage(output);
-
             }
         }
     }
