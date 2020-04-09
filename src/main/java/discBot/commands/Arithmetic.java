@@ -7,7 +7,7 @@ public class Arithmetic implements MessageCreateListener {
     public void onMessageCreate(MessageCreateEvent event) {
         String input = event.getMessageContent();
         String[] words = input.split("\\s+");
-        double output; // declares output variable
+        double output; // this thing will get removed soon
 
         // !compute2 command
         if (words[0].equalsIgnoreCase("!compute2")) {
